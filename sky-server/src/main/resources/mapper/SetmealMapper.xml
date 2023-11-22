@@ -23,6 +23,7 @@ order by s.create_time desc
     </select>
 
 
+
     <update id="update">
 
 
@@ -42,4 +43,20 @@ order by s.create_time desc
         </set>
             where id =#{id}
     </update>
+
+    <select id="list" resultType="com.sky.entity.Setmeal">
+        select * from setmeal
+<where>
+    <if test="name!=null">
+        and name like cancat('%',#{name},'%')
+    </if>
+<if test="categoryId !=null">
+    and category_id =#{categoryId}
+</if>
+<if test="status!=null">
+    and status=#{status}
+</if>
+</where>
+
+    </select>
 </mapper>
