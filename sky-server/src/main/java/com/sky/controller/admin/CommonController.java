@@ -36,7 +36,7 @@ public class CommonController {
     @Autowired
     private AliOssUtil aliOssUtil;
 
-//   @Value("${sky.filepath}")
+  @Value("${sky.filepath}")
 //   private String basePath;
 
     @PostMapping("/upload")
