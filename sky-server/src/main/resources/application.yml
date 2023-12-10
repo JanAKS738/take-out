@@ -51,3 +51,5 @@ sky:
   wechat:
     appid: ${sky.wechat.appid}
     secret: ${sky.wechat.secret}
+
+  filepath: D:\\LearningProjects\\GitRepo\\images\\

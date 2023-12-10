@@ -35,10 +35,10 @@ public class UserServiceImpl  implements UserService {
      */
     @Override
     public User wxLogin(UserLoginDTO userLoginDTO) {
-        //调用微信接口服务获取openID
-
+        //获取openID
         String json = getString(userLoginDTO);
 
+        //解析json返回数据
         JSONObject jsonObject= JSON.parseObject(json);
         String openid = jsonObject.getString("openid");
         //判断openID是否为空，空抛异常
@@ -60,6 +60,7 @@ public class UserServiceImpl  implements UserService {
         return user;
     }
 
+    //调用微信接口服务获取openID方法
     private String getString(UserLoginDTO userLoginDTO) {
         Map<String,String> map=new HashMap<>();
         map.put("appid",weChatProperties.getAppid());
