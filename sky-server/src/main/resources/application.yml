@@ -51,5 +51,13 @@ sky:
   wechat:
     appid: ${sky.wechat.appid}
     secret: ${sky.wechat.secret}
+    mchid: ${sky.wechat.mchid} #商户号
+    mchSerialNo: ${sky.wechat.mchSerialNo} #商户API证书的证书序列号
+    privateKeyFilePath: ${sky.wechat.privateKeyFilePath} #商户私钥文件
+    apiV3Key: ${sky.wechat.apiV3Key} #证书解密的密钥
+    weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath} #平台证书
+    notifyUrl: ${sky.wechat.notifyUrl} #支付成功的回调地址(微信向我们发送请求需要访问的地址）
+    refundNotifyUrl: ${sky.wechat.refundNotifyUrl} #退款成功的回调地址
 
-  filepath: D:\\LearningProjects\\GitRepo\\images\\
+
+
