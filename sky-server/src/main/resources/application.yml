@@ -59,5 +59,7 @@ sky:
     notifyUrl: ${sky.wechat.notifyUrl} #支付成功的回调地址(微信向我们发送请求需要访问的地址）
     refundNotifyUrl: ${sky.wechat.refundNotifyUrl} #退款成功的回调地址
 
+  shop: ${sky.shop.address}
 
+  ak: ${sky.baidu.ak}
 
